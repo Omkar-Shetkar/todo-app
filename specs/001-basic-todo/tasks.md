@@ -15,11 +15,11 @@
 
 **Purpose**: Project initialization and base build configurations
 
-- [ ] T001 Initialize backend Spring Boot project structure with Maven in `backend/pom.xml`
-- [ ] T002 Initialize frontend React project structure with Vite in `frontend/package.json` and `frontend/vite.config.js`
-- [ ] T003 [P] Configure Spring Boot application properties and H2 datasource in `backend/src/main/resources/application.yml`
-- [ ] T004 [P] Configure CORS and WebMvc settings for frontend integration in `backend/src/main/java/com/example/todo/config/WebConfig.java`
-- [ ] T005 [P] Setup global design system, CSS variables, typography, and modern aesthetics in `frontend/src/index.css`
+- [X] T001 Initialize backend Spring Boot project structure with Maven in `backend/pom.xml`
+- [X] T002 Initialize frontend React project structure with Vite in `frontend/package.json` and `frontend/vite.config.js`
+- [X] T003 [P] Configure Spring Boot application properties and H2 datasource in `backend/src/main/resources/application.yml`
+- [X] T004 [P] Configure CORS and WebMvc settings for frontend integration in `backend/src/main/java/com/example/todo/config/WebConfig.java`
+- [X] T005 [P] Setup global design system, CSS variables, typography, and modern aesthetics in `frontend/src/index.css`
 
 ---
 
@@ -29,11 +29,11 @@
 
 **⚠️ CRITICAL**: No user story implementation can begin until this phase is complete
 
-- [ ] T006 Create JPA `Todo` entity and table mapping in `backend/src/main/java/com/example/todo/model/Todo.java`
-- [ ] T007 [P] Create Spring Data JPA `TodoRepository` interface in `backend/src/main/java/com/example/todo/repository/TodoRepository.java`
-- [ ] T008 [P] Create global API exception handler and error response DTO in `backend/src/main/java/com/example/todo/exception/GlobalExceptionHandler.java` and `backend/src/main/java/com/example/todo/dto/ErrorResponse.java`
-- [ ] T009 [P] Create API client module with base HTTP request handling and error parsing in `frontend/src/services/api.js`
-- [ ] T010 Create root application container and responsive layout skeleton in `frontend/src/App.jsx` and `frontend/src/components/Header.jsx`
+- [X] T006 Create JPA `Todo` entity and table mapping in `backend/src/main/java/com/example/todo/model/Todo.java`
+- [X] T007 [P] Create Spring Data JPA `TodoRepository` interface in `backend/src/main/java/com/example/todo/repository/TodoRepository.java`
+- [X] T008 [P] Create global API exception handler and error response DTO in `backend/src/main/java/com/example/todo/exception/GlobalExceptionHandler.java` and `backend/src/main/java/com/example/todo/dto/ErrorResponse.java`
+- [X] T009 [P] Create API client module with base HTTP request handling and error parsing in `frontend/src/services/api.js`
+- [X] T010 Create root application container and responsive layout skeleton in `frontend/src/App.jsx` and `frontend/src/components/Header.jsx`
 
 **Checkpoint**: Foundation ready — user story implementation can now begin.
 
@@ -45,12 +45,12 @@
 
 **Independent Test**: Enter a task title, submit, verify that the task appears in the list and the input resets. Verify empty/whitespace input is prevented.
 
-- [ ] T011 [P] [US1] Create `CreateTodoRequest` and `TodoResponse` DTOs in `backend/src/main/java/com/example/todo/dto/CreateTodoRequest.java` and `backend/src/main/java/com/example/todo/dto/TodoResponse.java`
-- [ ] T012 [US1] Implement `TodoService` methods for creating and listing tasks with validation in `backend/src/main/java/com/example/todo/service/TodoService.java`
-- [ ] T013 [US1] Implement `GET /api/todos` and `POST /api/todos` endpoints in `backend/src/main/java/com/example/todo/controller/TodoController.java`
-- [ ] T014 [P] [US1] Create `TodoInput` component with input validation and keyboard submit handling in `frontend/src/components/TodoInput.jsx`
-- [ ] T015 [P] [US1] Create `TodoList` and `TodoItem` view components in `frontend/src/components/TodoList.jsx` and `frontend/src/components/TodoItem.jsx`
-- [ ] T016 [US1] Integrate task creation and fetching into `frontend/src/App.jsx` with optimistic updates and error handling
+- [X] T011 [P] [US1] Create `CreateTodoRequest` and `TodoResponse` DTOs in `backend/src/main/java/com/example/todo/dto/CreateTodoRequest.java` and `backend/src/main/java/com/example/todo/dto/TodoResponse.java`
+- [X] T012 [US1] Implement `TodoService` methods for creating and listing tasks with validation in `backend/src/main/java/com/example/todo/service/TodoService.java`
+- [X] T013 [US1] Implement `GET /api/todos` and `POST /api/todos` endpoints in `backend/src/main/java/com/example/todo/controller/TodoController.java`
+- [X] T014 [P] [US1] Create `TodoInput` component with input validation and keyboard submit handling in `frontend/src/components/TodoInput.jsx`
+- [X] T015 [P] [US1] Create `TodoList` and `TodoItem` view components in `frontend/src/components/TodoList.jsx` and `frontend/src/components/TodoItem.jsx`
+- [X] T016 [US1] Integrate task creation and fetching into `frontend/src/App.jsx` with optimistic updates and error handling
 
 **Checkpoint**: User Story 1 (MVP) is fully functional and testable independently.
 
@@ -62,9 +62,9 @@
 
 **Independent Test**: Click a task completion checkbox/toggle to verify the visual strikethrough updates immediately and the active counter adjusts.
 
-- [ ] T017 [US2] Implement toggle completion service logic and `PATCH /api/todos/{id}/toggle` endpoint in `backend/src/main/java/com/example/todo/service/TodoService.java` and `backend/src/main/java/com/example/todo/controller/TodoController.java`
-- [ ] T018 [P] [US2] Add completion checkbox interaction, animated checkmarks, and strikethrough styling in `frontend/src/components/TodoItem.jsx`
-- [ ] T019 [US2] Create `TodoStats` component displaying remaining active tasks count in `frontend/src/components/TodoStats.jsx` and wire state in `frontend/src/App.jsx`
+- [X] T017 [US2] Implement toggle completion service logic and `PATCH /api/todos/{id}/toggle` endpoint in `backend/src/main/java/com/example/todo/service/TodoService.java` and `backend/src/main/java/com/example/todo/controller/TodoController.java`
+- [X] T018 [P] [US2] Add completion checkbox interaction, animated checkmarks, and strikethrough styling in `frontend/src/components/TodoItem.jsx`
+- [X] T019 [US2] Create `TodoStats` component displaying remaining active tasks count in `frontend/src/components/TodoStats.jsx` and wire state in `frontend/src/App.jsx`
 
 **Checkpoint**: User Stories 1 and 2 work independently and together.
 
@@ -76,10 +76,10 @@
 
 **Independent Test**: Double-click or click edit on a task to modify text and save; click delete icon to permanently remove the item from the list.
 
-- [ ] T020 [P] [US3] Create `UpdateTodoRequest` DTO in `backend/src/main/java/com/example/todo/dto/UpdateTodoRequest.java`
-- [ ] T021 [US3] Implement update and delete service logic and `PUT /api/todos/{id}` & `DELETE /api/todos/{id}` endpoints in `backend/src/main/java/com/example/todo/service/TodoService.java` and `backend/src/main/java/com/example/todo/controller/TodoController.java`
-- [ ] T022 [US3] Implement in-place editing mode with Save/Cancel/Escape/Enter handlers in `frontend/src/components/TodoItem.jsx`
-- [ ] T023 [US3] Implement delete button action with micro-animation and API call in `frontend/src/components/TodoItem.jsx` and `frontend/src/App.jsx`
+- [X] T020 [P] [US3] Create `UpdateTodoRequest` DTO in `backend/src/main/java/com/example/todo/dto/UpdateTodoRequest.java`
+- [X] T021 [US3] Implement update and delete service logic and `PUT /api/todos/{id}` & `DELETE /api/todos/{id}` endpoints in `backend/src/main/java/com/example/todo/service/TodoService.java` and `backend/src/main/java/com/example/todo/controller/TodoController.java`
+- [X] T022 [US3] Implement in-place editing mode with Save/Cancel/Escape/Enter handlers in `frontend/src/components/TodoItem.jsx`
+- [X] T023 [US3] Implement delete button action with micro-animation and API call in `frontend/src/components/TodoItem.jsx` and `frontend/src/App.jsx`
 
 **Checkpoint**: Full CRUD operations functional on tasks.
 
@@ -91,9 +91,9 @@
 
 **Independent Test**: Switch between filter tabs to verify only matching items show; click "Clear Completed" to remove all finished tasks.
 
-- [ ] T024 [US4] Implement bulk delete of completed tasks in `backend/src/main/java/com/example/todo/service/TodoService.java` and `DELETE /api/todos/completed` in `backend/src/main/java/com/example/todo/controller/TodoController.java`
-- [ ] T025 [P] [US4] Create `TodoFilter` tabs component (`All`, `Active`, `Completed`) with active tab indicators in `frontend/src/components/TodoFilter.jsx`
-- [ ] T026 [US4] Implement client-side filtering logic, empty state UI when no matching tasks exist, and "Clear Completed" button in `frontend/src/App.jsx` and `frontend/src/components/TodoStats.jsx`
+- [X] T024 [US4] Implement bulk delete of completed tasks in `backend/src/main/java/com/example/todo/service/TodoService.java` and `DELETE /api/todos/completed` in `backend/src/main/java/com/example/todo/controller/TodoController.java`
+- [X] T025 [P] [US4] Create `TodoFilter` tabs component (`All`, `Active`, `Completed`) with active tab indicators in `frontend/src/components/TodoFilter.jsx`
+- [X] T026 [US4] Implement client-side filtering logic, empty state UI when no matching tasks exist, and "Clear Completed" button in `frontend/src/App.jsx` and `frontend/src/components/TodoStats.jsx`
 
 **Checkpoint**: All user stories (P1 through P4) complete.
 
@@ -103,9 +103,9 @@
 
 **Purpose**: Verification, testing, and UI polish across the entire application
 
-- [ ] T027 [P] Implement controller integration test suite with MockMvc in `backend/src/test/java/com/example/todo/controller/TodoControllerTest.java`
-- [ ] T028 [P] Polish UI with glassmorphic cards, gradient accents, focus rings, hover micro-interactions, and dark/light contrast in `frontend/src/index.css`
-- [ ] T029 Validate full user flow end-to-end against `specs/001-basic-todo/quickstart.md`
+- [X] T027 [P] Implement controller integration test suite with MockMvc in `backend/src/test/java/com/example/todo/controller/TodoControllerTest.java`
+- [X] T028 [P] Polish UI with glassmorphic cards, gradient accents, focus rings, hover micro-interactions, and dark/light contrast in `frontend/src/index.css`
+- [X] T029 Validate full user flow end-to-end against `specs/001-basic-todo/quickstart.md`
 
 ---
 

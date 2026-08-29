@@ -1,0 +1,21 @@
+# Universal / OS
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.idea/
+.vscode/
+*.log
+
+# Java / Maven
+backend/target/
+*.class
+*.jar
+.flattened-pom.xml
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+.env*
+!.env.example
